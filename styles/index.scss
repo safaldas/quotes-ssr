@@ -1,0 +1,127 @@
+.maincon {
+  color: black;
+  align-content: center;
+  flex-flow: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  margin: 0;
+}
+
+.wrapper {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  display: flex;
+  color: black;
+  flex-flow: row wrap;
+  align-content: center;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  justify-content: center;
+  background-color: #3d3d3d;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 40px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 40px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 40px -9px rgba(0, 0, 0, 0.75);
+  opacity: 0.84;
+  transition: background-color 2.9s ease;
+  transition: color 3s ease;
+}
+
+.textAuth {
+  max-width: 800px;
+  text-align: center;
+  min-height: 400px;
+}
+
+.rightCon {
+  min-width: 300px;
+
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 1em;
+}
+
+.leftCon {
+  margin-top: auto;
+  margin-bottom: auto;
+  min-width: 300px;
+  text-align: center;
+  color: black;
+  padding-top: 10px;
+}
+
+#text {
+  text-align: center;
+  padding-top: 100px;
+
+  font-family: "Abel", sans-serif;
+}
+
+#text,
+h1 {
+  font-size: 50px;
+}
+
+#author {
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.smaller {
+  font-size: 40px;
+}
+
+.quoteButton {
+  background-color: white;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  color: #3d3d3d;
+  font-weight: 800;
+  font-family: Arial;
+  font-size: 22px;
+  padding: 5px 60px;
+  text-decoration: none;
+  font-family: "Abel", sans-serif;
+}
+.quoteButton:hover {
+  background-color: #101010;
+  text-decoration: none;
+  border: none;
+  color: white;
+}
+.quoteButton:active {
+  position: relative;
+  top: 1px;
+  text-decoration: none;
+  border: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0251a2 !important;
+  text-decoration: none;
+}
+
+hr {
+  color: white;
+}
+
+hr.linie1 {
+  border-top: 1px solid white;
+  opacity: 0.5;
+}
+
+.back {
+  transition: background-color 2.8s ease;
+  height: 100vh;
+}
