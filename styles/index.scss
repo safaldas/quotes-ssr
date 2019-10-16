@@ -11,8 +11,8 @@ body {
 }
 
 .wrapper {
-  margin-top: 10%;
-  margin-bottom: 10%;
+  // margin-top: 10%;
+  // margin-bottom: 10%;
   display: flex;
   color: black;
   flex-flow: row wrap;
@@ -64,7 +64,6 @@ body {
 
 #text,
 h1 {
-  font-size: 50px;
 }
 
 #author {
@@ -122,6 +121,20 @@ hr.linie1 {
 }
 
 .back {
+  display: flex;
   transition: background-color 2.8s ease;
-  height: 100vh;
+  min-height: 100vh;
+  align-items: center;
+}
+#info {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  font-size: 1.3em;
+}
+@media only screen and (min-width: 768px) {
+  #text {
+    font-size: 3em;
+  }
 }

@@ -75,50 +75,52 @@ const Home = ({ quote }) => {
         ></link>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
-        <div
-          className="back"
-          style={{
-            backgroundColor: state.backcolor
-          }}
-        >
-          <div className="container">
-            <div className="center  maincon col-sm-12 my-auto ">
-              <div
-                className="col-sm-8 wrapper"
-                id="quote-box"
-                style={{
-                  backgroundColor: state.wrapperBack,
-                  color: state.fontColor
-                  // backgroundImage: `url('${image}')`
-                }}
-              >
-                <div className="col-sm-12 textAuth flexItem">
-                  <h1 id="text">
-                    <i className="fa fa-quote-left smaller"></i>&nbsp;
-                    {quoteText}
-                  </h1>
 
-                  <h3 id="author">
-                    <strong> - {quoteAuthor} -</strong>
-                  </h3>
-                  <hr className="linie1" />
-                </div>
+      <div
+        className="back"
+        style={{
+          backgroundColor: state.backcolor
+        }}
+      >
+        <div className="container">
+          <div className="center  maincon col-sm-12 my-auto ">
+            <div
+              className="col-sm-8 wrapper"
+              id="quote-box"
+              style={{
+                backgroundColor: state.wrapperBack,
+                color: state.fontColor
+                // backgroundImage: `url('${image}')`
+              }}
+            >
+              <div className="col-sm-12 textAuth flexItem">
+                <h1 id="text">
+                  <i className="fa fa-quote-left smaller"></i>&nbsp;
+                  {quoteText}
+                </h1>
 
-                <div className="col-sm-4 rightCon flexItem">
-                  <button
-                    className="quoteButton"
-                    id="new-quote"
-                    onClick={newQuote}
-                  >
-                    New Quote
-                  </button>
-                </div>
+                <h3 id="author">
+                  <strong> - {quoteAuthor} -</strong>
+                </h3>
+                <hr className="linie1" />
+              </div>
+
+              <div className="col-sm-4 rightCon flexItem">
+                <button
+                  className="quoteButton"
+                  id="new-quote"
+                  onClick={newQuote}
+                >
+                  New Quote
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <a id="info" href="/about" target="_blank">
+        <i className="fa fa-question-circle-o"></i>&nbsp;
+      </a>
     </div>
   );
 };
