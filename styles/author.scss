@@ -1,0 +1,72 @@
+.author-body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  padding-bottom: 50px;
+  font-family: sans-serif;
+  background: linear-gradient(to bottom, #2d91c2 0%, #1e528e 100%);
+}
+
+.author-name {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding-top: 50px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.8em;
+  font-size: 2.5vw;
+  font-weight: normal;
+  // opacity: 0.2;
+  text-transform: uppercase;
+  text-shadow: rgba(29, 29, 29, 0.3) 4px 6px 3px,
+    hsla(360, 55%, 95%, 0.3) 0 -1px 2px, hsla(0, 45%, 5%, 0.3) 0 -1px 2px,
+    hsla(360, 55%, 95%, 0.3) 0 20px 15px;
+}
+section {
+  width: 60%;
+  margin: 70px auto;
+}
+
+/* Simple Slider */
+.white-back {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background: #fff;
+}
+
+.bubble blockquote {
+  margin: 10px 10px 0;
+  background: #fff;
+  padding: 60px;
+  position: relative;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.25em;
+  color: #1e528e;
+}
+.bubble blockquote:before,
+.bubble blockquote:after {
+  content: "\201C";
+  position: absolute;
+  font-size: 80px;
+  padding: 10px;
+  line-height: 1;
+  color: #1e528e;
+}
+.bubble blockquote:before {
+  top: 0;
+  left: 10px;
+}
+.bubble blockquote:after {
+  content: "\201D";
+  right: 10px;
+  bottom: -0.5em;
+}
+
+#back-arrow {
+  position: fixed;
+  font-size: 1.6em;
+  color: white;
+  top: 1em;
+  left: 8px;
+  padding: 10px;
+}

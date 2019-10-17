@@ -1,6 +1,7 @@
 // @ts-nocheck
 import React, { useState } from "react";
 import Head from "next/head";
+import Link from "next/link";
 import fetch from "isomorphic-unfetch";
 
 import "../styles/index.scss";
@@ -60,7 +61,6 @@ const Home = ({ quote }) => {
     <div>
       <Head>
         <title>Home</title>
-
         <link
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           rel="stylesheet"
@@ -100,7 +100,12 @@ const Home = ({ quote }) => {
                 </h1>
 
                 <h3 id="author">
-                  <strong> - {quoteAuthor} -</strong>
+                  <Link href="/author/[name]" as={`/author/${quoteAuthor}`}>
+                    <a>
+                      {" "}
+                      <strong> - {quoteAuthor} -</strong>
+                    </a>
+                  </Link>
                 </h3>
                 <hr className="linie1" />
               </div>
@@ -128,9 +133,6 @@ const Home = ({ quote }) => {
 Home.getInitialProps = async function() {
   const res = await fetch("https://quote-garden.herokuapp.com/quotes/random");
   const data = await res.json();
-
-  console.log(`Show data fetched. Count: ${data.length}`, data);
-
   return {
     quote: { ...data, image: "http://picsum.photos/700/520?blur&grayscale" }
   };
