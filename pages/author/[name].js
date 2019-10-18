@@ -1,6 +1,7 @@
 // @ts-nocheck
 import React from "react";
 import Head from "next/head";
+import fetch from "isomorphic-unfetch";
 
 import "./../../styles/author.scss";
 
@@ -36,10 +37,14 @@ const Author = ({ name, quotes }) => {
     </div>
   );
 };
-Author.getInitialProps = async ({ query }) => {
-  const name = query.name || "shakesphere";
+/**
+ * @param request
+ * @returns { }
+ */
+Author.getInitialProps = async ({ query: { name } }) => {
   const res = await fetch(
-    "https://quote-garden.herokuapp.com/quotes/author/" + name
+    "https://quote-garden.herokuapp.com/quotes/author/" +
+      (name || "Byron Pulsifer")
   );
   const data = await res.json();
 
