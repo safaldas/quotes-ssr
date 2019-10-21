@@ -60,7 +60,12 @@ const Home = ({ quote }) => {
   return (
     <div>
       <Head>
-        <title>Home</title>
+        <title>A quotes app | Nextjs demo</title>
+        <meta
+          name="description"
+          content="A quote is fetched from the api and prerenders by Nextjs. This is a demo for the blog "
+        ></meta>
+
         <link
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           rel="stylesheet"
