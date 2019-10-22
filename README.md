@@ -1,7 +1,7 @@
 # Quotes app with Nextjs SSR
 
 This project is a demo for nextjs blog.
-[blog.safaldas.in](blog.safaldas.in)
+[blog.safaldas.in](https://blog.safaldas.in)
 
 [https://quotes-app.safaldas.in](https://quotes-app.safaldas.in/)
 
