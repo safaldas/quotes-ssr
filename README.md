@@ -1,8 +1,9 @@
 # Quotes app with Nextjs SSR
 
 This project is a demo for nextjs blog.
+[blog.safaldas.in](blog.safaldas.in)
 
-[http://quotes-app.safaldas.in](http://quotes-app.safaldas.in/)
+[https://quotes-app.safaldas.in](https://quotes-app.safaldas.in/)
 
 ## Dynamic pages
 

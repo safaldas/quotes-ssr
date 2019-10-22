@@ -30,7 +30,7 @@ const Author = ({ name, quotes }) => {
       {quotes.map((quote, i) => (
         <section className="quotes" key={i}>
           <div className="bubble">
-            <blockquote>{quote.quoteText}</blockquote>
+            <blockquote>{quote.content}</blockquote>
           </div>
         </section>
       ))}
@@ -43,8 +43,7 @@ const Author = ({ name, quotes }) => {
  */
 Author.getInitialProps = async ({ query: { name } }) => {
   const res = await fetch(
-    "https://quote-garden.herokuapp.com/quotes/author/" +
-      (name || "Byron Pulsifer")
+    "https://api.quotable.io/quotes?author=" + (name || "John Lennon")
   );
   const data = await res.json();
 

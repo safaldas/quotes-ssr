@@ -33,16 +33,14 @@ const About = () => (
       </p>
       <p>
         The Quotes are from{" "}
-        <a
-          target="_blank"
-          href="https://pprathameshmore.github.io/QuoteGarden/"
-        >
-          QuoteGarden by pprathameshmore
+        <a target="_blank" href="https://github.com/lukePeavey/quotable">
+          Quotable by lukePeavey
         </a>
       </p>
       <hr />
       <p>
-        Want to see the code? <a href="">Github</a>
+        Want to see the code?{" "}
+        <a href="https://github.com/safaldas/quotes-ssr">Quotes-ssr Github</a>
       </p>
       <p className="lead">
         <a className="btn btn-primary btn-sm" href="/" role="button">

@@ -6,12 +6,12 @@ import fetch from "isomorphic-unfetch";
 
 import "../styles/index.scss";
 
-// const data = {
-//   _id: "5d91b45d9980192a317c8dcf",
-//   quoteText: "Smile, breathe and go slowly.",
-//   quoteAuthor: "Thich Nhat Hanh",
-//   image: "https://picsum.photos/720/1300"
-// };
+const data = {
+  _id: "fpldDuKF_az2",
+  content: "Life is what happens while you are making other plans.",
+  author: "John Lennon"
+};
+
 const Home = ({ quote }) => {
   const colors = [
     "#FF5733",
@@ -56,7 +56,7 @@ const Home = ({ quote }) => {
         });
   };
   console.log(state);
-  const { quoteText, quoteAuthor, image } = state;
+  const { content, author, image } = state;
   return (
     <div>
       <Head>
@@ -101,14 +101,14 @@ const Home = ({ quote }) => {
               <div className="col-sm-12 textAuth flexItem">
                 <h1 id="text">
                   <i className="fa fa-quote-left smaller"></i>&nbsp;
-                  {quoteText}
+                  {content}
                 </h1>
 
                 <h3 id="author">
-                  <Link href="/author/[name]" as={`/author/${quoteAuthor}`}>
+                  <Link href="/author/[name]" as={`/author/${author}`}>
                     <a>
                       {" "}
-                      <strong> - {quoteAuthor} -</strong>
+                      <strong> - {author} -</strong>
                     </a>
                   </Link>
                 </h3>
@@ -136,7 +136,7 @@ const Home = ({ quote }) => {
 };
 
 Home.getInitialProps = async function() {
-  const res = await fetch("https://quote-garden.herokuapp.com/quotes/random");
+  const res = await fetch("https://api.quotable.io/random");
   const data = await res.json();
   return {
     quote: { ...data, image: "http://picsum.photos/700/520?blur&grayscale" }
