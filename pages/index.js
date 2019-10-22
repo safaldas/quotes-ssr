@@ -33,7 +33,7 @@ const Home = ({ quote }) => {
 
   const [state, setState] = useState(initialState);
   const newQuote = async () => {
-    const res = await fetch("https://quote-garden.herokuapp.com/quotes/random");
+    const res = await fetch("https://api.quotable.io/random");
     const data = await res.json();
     let randColor = Math.round(Math.random() * colorLen);
     let newColor = randColor - Math.round(Math.random() * 3);
