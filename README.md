@@ -1,7 +1,7 @@
 # Quotes app with Nextjs SSR
 
 This project is a demo for nextjs blog.
-[https://nullcast.io/dynamic-pages-in-nextjs-and-prefetching-apis/](https://https://nullcast.io/dynamic-pages-in-nextjs-and-prefetching-apis/)
+[https://nullcast.io/dynamic-pages-in-nextjs-and-prefetching-apis/](https://nullcast.io/dynamic-pages-in-nextjs-and-prefetching-apis/)
 
 [https://quotes-app.safaldas.in](https://quotes-app.safaldas.in/)
 
